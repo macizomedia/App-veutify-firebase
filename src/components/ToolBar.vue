@@ -28,7 +28,8 @@
 <script>
   export default {
     data: () => ({
-      user: "", 
+      user: "",
+      active: "false"
     }),
     computed: {
       menuItems () {
