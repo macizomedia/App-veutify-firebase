@@ -14,7 +14,6 @@
         </v-list-item>
       </v-list>
     </v-menu>
-    </v-card-title>
 
     <v-spacer />
 
@@ -28,14 +27,13 @@
 <script>
   export default {
     data: () => ({
-      user: "",
-      active: "false"
+      user: "", 
     }),
     computed: {
       menuItems () {
         let menuItems = [
-          {icon: 'face', title: 'Sign up', link: '/signup'},
-          {icon: 'lock_open', title: 'Sign in', link: '/signin'}
+          {icon: 'face', title: 'Sign up', link: '/auth'},
+          {icon: 'lock_open', title: 'Sign in', link: '/auth'}
         ]
         if (this.userIsAuthenticated) {
           menuItems = [
