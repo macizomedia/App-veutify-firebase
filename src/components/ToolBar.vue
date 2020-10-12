@@ -3,7 +3,7 @@
     <v-menu bottom left>
       <template v-slot:activator="{ on, attrs }">
         <v-btn dark icon v-bind="attrs" v-on="on">
-          <v-icon>mdi-dots-vertical</v-icon>
+          <btn-H />
         </v-btn>
       </template>
 
@@ -27,6 +27,10 @@
 
 <script>
   export default {
+   components: {
+    /*Footer: () => import("./components/Footer.vue"),*/
+    Btn-H: () => import("./Auth/btn-emit.vue"),
+  },
     data: () => ({
       user: "",
       active: "false"

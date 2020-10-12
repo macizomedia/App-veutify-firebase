@@ -11,7 +11,9 @@
 </template>
 
 <script>
+
     export default {
+   
         data: () => ({
             value: 1,
             icons: [{
