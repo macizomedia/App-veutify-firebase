@@ -1,10 +1,10 @@
 <template>
   <v-main>
-    <ToolBar />
+    <ToolBar v-if="user"/>
     <v-container align-center>
       <Welcome />
     </v-container>
-    <Nav />
+    <Nav v-if="user" />
   </v-main>
 </template>
 
@@ -24,6 +24,7 @@ export default {
   },
   data () {
     return {
+      user: false
       //
     }
   },
