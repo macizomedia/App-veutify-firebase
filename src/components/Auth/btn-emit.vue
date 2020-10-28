@@ -38,7 +38,7 @@
 // Animated hamburger menu and expand
 
 export default {
-  name: "HamburgerMenu",
+  name: "btn",
   data: () => ({
     /**
      * @vuese
@@ -103,7 +103,7 @@ path {
 .line {
   fill: none;
   transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-  stroke: #545759;
+  stroke: #ffffff;
   stroke-width: 5.5;
   stroke-linecap: round;
 }
